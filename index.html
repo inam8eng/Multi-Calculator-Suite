@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="general.css" /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="main__button">
+        <button
+          class="main-calculator__button"
+          data-calculator-type="standardCalculator"
+        >
+          <h2>Standard Calculator</h2>
+        </button>
+        <button
+          class="main-calculator__button"
+          data-calculator-type="ageCalculator"
+        >
+          <h2>Age Calculator</h2>
+        </button>
+        <button
+          class="main-calculator__button"
+          data-calculator-type="currencyCalculator"
+        >
+          <h2>Currency Calculator</h2>
+        </button>
+        <button
+          class="main-calculator__button luck-calculator__button"
+          data-calculator-type="luckCalculator"
+        >
+          <h2>Luck Calculator</h2>
+        </button>
+      </section>
+
+      <!-- Standard Calculator -->
+      <div class="standardCalculator calculator grid">
+        <div class="standard-calculator__screen calculator__screen">0</div>
+        <div class="history__screen hidden">0</div>
+        <button class="eraser calculator__button">AC</button>
+        <!-- <button class="calculator__button">+/-</button> -->
+        <button class="calculator__button">/</button>
+        <button class="calculator__button">*</button>
+        <!-- <button class="calculator__button">√</button> -->
+        <button class="calculator__button">%</button>
+        <button class="calculator__button">1</button>
+        <button class="calculator__button">2</button>
+        <button class="calculator__button">3</button>
+        <button class="calculator__button">+</button>
+        <button class="calculator__button">4</button>
+        <button class="calculator__button">5</button>
+        <button class="calculator__button">6</button>
+        <button class="calculator__button">-</button>
+        <button class="calculator__button">7</button>
+        <button class="calculator__button">8</button>
+        <button class="calculator__button">9</button>
+        <button class="calculator__button">0</button>
+        <button class="calculator__button">.</button>
+        <button class="answer calculator__button">=</button>
+        <button class="history__button off">Show History</button>
+      </div>
+
+      <!-- Age Calculator -->
+      <div class="ageCalculator calculator grid hidden">
+        <div class="age-calculator__screen calculator__screen">
+          Enter Your Birthyear
+        </div>
+        <div class="history__screen hidden">0</div>
+        <button class="eraser calculator__button">Reset</button>
+        <!-- <button class="calculator__button">+/-</button> -->
+
+        <!-- <button class="calculator__button">√</button> -->
+
+        <button class="calculator__button">1</button>
+        <button class="calculator__button">2</button>
+        <button class="calculator__button">3</button>
+        <button class="calculator__button">4</button>
+        <button class="calculator__button">5</button>
+        <button class="calculator__button">6</button>
+        <button class="calculator__button">7</button>
+        <button class="calculator__button">8</button>
+        <button class="calculator__button">9</button>
+        <button class="calculator__button">0</button>
+
+        <button class="answer calculator__button">Calculate</button>
+        <!-- <button class="history__button off">Show History</button> -->
+      </div>
+
+      <!-- Currency Calculator -->
+      <div class="currencyCalculator calculator grid hidden">
+        <div class="dropdown flex flags">
+          <div class="flag dropdown-toggle flag-left" id="countryDropdownFrom">
+            Currency From
+          </div>
+          <div class="reverse-button">
+            <i class="fas fa-arrow-right" onclick="reverseCountries()"></i>
+          </div>
+
+          <div class="dropdown-toggle flag flag-right" id="countryDropdownTo">
+            Currency To
+          </div>
+        </div>
+        <div class="currency-calculator__screen calculator__screen">0</div>
+        <button class="eraser calculator__button">Reset</button>
+        <!-- <button class="calculator__button">+/-</button> -->
+
+        <!-- <button class="calculator__button">√</button> -->
+
+        <button class="calculator__button">1</button>
+        <button class="calculator__button">2</button>
+        <button class="calculator__button">3</button>
+        <button class="calculator__button">4</button>
+        <button class="calculator__button">5</button>
+        <button class="calculator__button">6</button>
+        <button class="calculator__button">7</button>
+        <button class="calculator__button">8</button>
+        <button class="calculator__button">9</button>
+        <button class="calculator__button">0</button>
+
+        <button class="answer calculator__button" id="calculate">
+          Continue
+        </button>
+        <!-- <button class="history__button off">Show History</button> -->
+      </div>
+
+      <!-- Luck Calculator -->
+      <div class="luckCalculator calculator grid hidden">
+        <div class="hidden luck-screen good-luck-screen inactive-grid-screen">
+          <h3>Good luck</h3>
+        </div>
+        <div
+          class="hidden luck-screen average-luck-screen inactive-grid-screen"
+        >
+          <h3>Av Luck</h3>
+          <!-- Content for the average luck screen -->
+        </div>
+        <div class="hidden luck-screen bad-luck-screen inactive-grid-screen">
+          <h3>Bad Luck</h3>
+          <!-- Content for the bad luck screen -->
+        </div>
+
+        <div class="luck-calculator__screen calculator__screen">
+          <div class="screen-numbers calculator__screen">
+            <div>Number 1</div>
+            <div>Number 2</div>
+            <div>Number 3</div>
+            <div>Number 4</div>
+          </div>
+        </div>
+        <button class="eraser calculator__button">Reset</button>
+        <!-- <button class="calculator__button">+/-</button> -->
+
+        <!-- <button class="calculator__button">√</button> -->
+
+        <button class="calculator__button">1</button>
+        <button class="calculator__button">2</button>
+        <button class="calculator__button">3</button>
+        <button class="calculator__button">4</button>
+        <button class="calculator__button">5</button>
+        <button class="calculator__button">6</button>
+        <button class="calculator__button">7</button>
+        <button class="calculator__button">8</button>
+        <button class="calculator__button">9</button>
+        <button class="calculator__button">0</button>
+
+        <button class="calculator__button answer luckCheck" id="calculate">
+          Try it Now
+        </button>
+        <!-- <button class="history__button off">Show History</button> -->
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="module" src="script.js"></script>
