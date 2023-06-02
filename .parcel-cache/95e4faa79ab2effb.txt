@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 6357
+=======
+6358
+>>>>>>> Refactor
 69F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\cookie133290099248130830 1
 81F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\posthtml\readme.md133290122377862745 0
 77F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\object-inspect133290099256761060 1
@@ -28,7 +32,11 @@
 107F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@swc\helpers\lib\_class_private_field_set.js133290122449775920 0
 103F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\caniuse-lite\data\features\websockets.js133290122726238162 0
 102F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\ordered-binary\.idea\ordered-binary.iml133290122363072261 0
+<<<<<<< HEAD
 60F:\Projects\Practice (Portfolio)\Multi Calculator\index.html133302114031932243 0
+=======
+60F:\Projects\Practice (Portfolio)\Multi Calculator\index.html133302187678200272 0
+>>>>>>> Refactor
 81F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\mdn-data\README.md133290122494012437 0
 80F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\terser\lib\ast.js133290122405647628 0
 82F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\parse-json\index.js133290122358350432 0
@@ -71,7 +79,11 @@
 101F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\terser\lib\utils\first_in_statement.js133290122498901990 0
 100F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\.bin\node-gyp-build-optional-packages133290122907034054 0
 93F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\node_modules\mdn-data\api133290122416409483 1
+<<<<<<< HEAD
 54F:\Projects\Practice (Portfolio)\Multi Calculator\dist133302158109119698 1
+=======
+54F:\Projects\Practice (Portfolio)\Multi Calculator\dist133302198205618613 1
+>>>>>>> Refactor
 58F:\Projects\Practice (Portfolio)\Multi Calculator\Fate.css133289739453431263 0
 88F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\safer-buffer\dangerous.js133290099246328050 0
 61F:\Projects\Practice (Portfolio)\Multi Calculator\general.css133296876872028423 0
@@ -83,15 +95,46 @@
 97F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\core\src\ReporterRunner.js133290122548369996 0
 128F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeViewBox.js133290122515547270 0
 112F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\package-manager\src\promiseFromProcess.js133290122456381462 0
+<<<<<<< HEAD
 59F:\Projects\Practice (Portfolio)\Multi Calculator\style.css133302113312668454 0
+=======
+59F:\Projects\Practice (Portfolio)\Multi Calculator\style.css133302187678210257 0
+>>>>>>> Refactor
 67F:\Projects\Practice (Portfolio)\Multi Calculator\package-lock.json133302096547329518 0
 82F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\is-json\.travis.yml133290122379051801 0
 93F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@lmdb\lmdb-win32-x64\README.md133290122360799694 0
-62F:\Projects\Practice (Portfolio)\Multi Calculator\package.json133302096547369495 0
+62F:\Projects\Practice (Portfolio)\Multi Calculator\package.json133302198152012136 0
 97F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\type-fest\source\set-optional.d.ts133290122456710340 0
 107F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\cjs\restructure\4-restructShorthand.cjs133290122379107962 0
 83F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\braces\lib\expand.js133290122393831887 0
 103F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\caniuse-lite\data\features\ogg-vorbis.js133290122625699379 0
+90F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\type-fest\source\entry.d.ts133290122416379497 0
+83F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\posthtml-parser\dist133290122395801458 1
+95F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\react-error-overlay\package.json133290122393931823 0
+67F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@swc133290122316989014 1
+72F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\nth-check133290122430828093 1
+102F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\node_modules\mdn-data\CHANGELOG.md133290122455461984 0
+86F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\source-map\CHANGELOG.md133290122418605979 0
+95F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\cosmiconfig\dist\cacheWrapper.js133290122359149974 0
+73F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.3a01df49.css133302198205228320 0
+82F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\css-tree\cjs\syntax133290122526974762 1
+88F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\js-yaml\lib\type\merge.js133290122440137653 0
+102F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\type-fest\source\async-return-type.d.ts133290122369581150 0
+58F:\Projects\Practice (Portfolio)\Multi Calculator\texts.js133299487814840286 0
+81F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\dotenv\lib\main.js133290122391383183 0
+143F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-optional.cmd133290122907193969 0
+100F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\caniuse-lite\data\features\colr-v1.js133290122545061582 0
+116F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\node_modules\css-tree\cjs\syntax\atrule\page.cjs133290122538186262 0
+77F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\to-regex-range133290122363761419 1
+88F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\side-channel\package.json133290099248322452 0
+93F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\domain-browser\source\index.js133299482499871462 0
+104F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@swc\helpers\lib\_class_name_tdz_error.js133290122429047772 0
+59F:\Projects\Practice (Portfolio)\Multi Calculator\README.md133302190847454648 0
+109F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\abortcontroller-polyfill\src\abortableFetch.js133290122359119985 0
+110F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@jridgewell\set-array\dist\types\set-array.d.ts133290122391113346 0
+133F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\optimizer-htmlnano\node_modules\mdn-data\css\units.schema.json133290122454387114 0
+89F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\tslib\modules\package.json133290122389502909 0
+102F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\caniuse-lite\data\features\clipboard.js133290122542367899 0
 110F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\core\src\requests\BundleGraphRequest.js133290122498981914 0
 151F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\pseudo-selectors\filters.d.ts.map133290122424292494 0
 101F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\transformer-image\package.json133290122394096698 0
@@ -102,7 +145,11 @@
 112F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\core\test\fixtures\custom-format-mismatch133290122571884964 1
 82F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\has-proto\README.md133290099248332448 0
 110F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\caniuse-lite\data\features\template-literals.js133290122722958655 0
+<<<<<<< HEAD
 59F:\Projects\Practice (Portfolio)\Multi Calculator\script.js133302158105648435 0
+=======
+59F:\Projects\Practice (Portfolio)\Multi Calculator\script.js133302187678200272 0
+>>>>>>> Refactor
 94F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\lightningcss\node\index.js.flow133290122407131577 0
 107F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\source-map\dist\wasm-bindings-web.js133290122422954454 0
 83F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\cjs\version.cjs133290122497390661 0
@@ -119,6 +166,7 @@
 85F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\term-size\package.json133290122393841876 0
 149F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\core\test\fixtures\plugins\node_modules\parcel-transformer-no-engines\index.js133290122534386010 0
 70F:\Projects\Practice (Portfolio)\Multi Calculator\switchCalculators.js133301830097122555 0
+<<<<<<< HEAD
 90F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\type-fest\source\entry.d.ts133290122416379497 0
 83F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\posthtml-parser\dist133290122395801458 1
 95F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\react-error-overlay\package.json133290122393931823 0
@@ -137,6 +185,8 @@
 100F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\caniuse-lite\data\features\colr-v1.js133290122545061582 0
 116F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\node_modules\css-tree\cjs\syntax\atrule\page.cjs133290122538186262 0
 77F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\to-regex-range133290122363761419 1
+=======
+>>>>>>> Refactor
 86F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\package-manager133290122509801262 1
 96F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\source-map\dist\source-map.min.js133290122450042312 0
 111F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\lmdb\node_modules\node-addon-api\tools\README.md133290122439937758 0
@@ -226,9 +276,9 @@
 93F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\object-inspect\test\lowbyte.js133290099254791916 0
 94F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\caniuse-lite\data\regions\MM.js133290122624555290 0
 86F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\fill-range\package.json133290122356248843 0
-68F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\debug133290099249014622 1
 84F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\detect-libc\README.md133290122362144524 0
 71F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\argparse133290122395791461 1
+68F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\debug133290099249014622 1
 137F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\atrule\page.js133290122539991438 0
 93F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\object-inspect\test\element.js133290099248874705 0
 101F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\cjs\replace\AttributeSelector.cjs133290122415330991 0
@@ -808,7 +858,11 @@
 96F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\svgo\plugins\removeHiddenElems.js133290122505939673 0
 83F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\mime-types\README.md133290099247870988 0
 88F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@swc\helpers\src\_set.mjs133290122554579536 0
+<<<<<<< HEAD
 65F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.html133302114037261843 0
+=======
+65F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.html133302198204293619 0
+>>>>>>> Refactor
 80F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\mdn-data\index.js133290122374305207 0
 97F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\caniuse-lite\dist\lib\supported.js133290122714117076 0
 87F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\source-map\lib\base64.js133290122389512912 0
@@ -1272,12 +1326,6 @@
 103F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@jridgewell\sourcemap-codec\package.json133290122362552559 0
 77F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\tslib\tslib.js133290122380811565 0
 112F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\caniuse-lite\data\features\requestidlecallback.js133290122651975666 0
-88F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\side-channel\package.json133290099248322452 0
-93F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\domain-browser\source\index.js133299482499871462 0
-110F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@jridgewell\set-array\dist\types\set-array.d.ts133290122391113346 0
-133F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\optimizer-htmlnano\node_modules\mdn-data\css\units.schema.json133290122454387114 0
-89F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\tslib\modules\package.json133290122389502909 0
-102F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\caniuse-lite\data\features\clipboard.js133290122542367899 0
 95F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@jridgewell\sourcemap-codec\dist133290122391113346 1
 137F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\package-manager\test\fixtures\has-a-not-yet-installed\package.json133290122495122929 0
 86F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\toidentifier\HISTORY.md133290099247037618 0
@@ -1774,7 +1822,11 @@
 87F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\node-addon-api\nothing.c133290122355165870 0
 97F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\object-inspect\test\toStringTag.js133290099256501203 0
 99F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\cosmiconfig\dist\cacheWrapper.js.map133290122416069675 0
+<<<<<<< HEAD
 77F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.3a01df49.css.map133302157806565428 0
+=======
+77F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.3a01df49.css.map133302198205258351 0
+>>>>>>> Refactor
 80F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\side-channel\test133290099248050880 1
 89F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\side-channel\test\index.js133290099248120834 0
 120F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mtest3.c133290122524304960 0
@@ -3312,8 +3364,8 @@
 83F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\debug\src\browser.js133290099249094593 0
 89F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@trysound\sax\package.json133290122363841377 0
 80F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\debug\src\node.js133290099250514347 0
-71F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\cjs133290122496763701 1
 112F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\node_modules\css-tree\lib\convertor\index.js133290122573785893 0
+71F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\cjs133290122496763701 1
 75F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\LICENSE133290122356248843 0
 80F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\csso\node_modules133290122317441369 1
 116F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\caniuse-lite\data\features\kerning-pairs-ligatures.js133290122614807920 0
@@ -4892,8 +4944,6 @@
 80F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\accepts\README.md133290099247870988 0
 100F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\abortcontroller-polyfill\package.json133290122416069675 0
 91F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\abortcontroller-polyfill\src133290122414881197 1
-104F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@swc\helpers\lib\_class_name_tdz_error.js133290122429047772 0
-109F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\abortcontroller-polyfill\src\abortableFetch.js133290122359119985 0
 110F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\abortcontroller-polyfill\src\abortcontroller.js133290122388933234 0
 111F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\abortcontroller-polyfill\dist\abortcontroller.js133290122378830350 0
 108F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\reporter-cli\test\CLIReporter.test.js133290122405347800 0
@@ -6178,7 +6228,11 @@
 105F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\core\lib\requests\DevDepRequest.js133290122513607803 0
 106F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\core\lib\requests\PackageRequest.js133290122538176267 0
 111F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\core\lib\requests\ParcelConfigRequest.js133290122541971994 0
+<<<<<<< HEAD
 76F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.8cfc62b9.js.map133302158109099699 0
+=======
+76F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.8cfc62b9.js.map133302198205608618 0
+>>>>>>> Refactor
 103F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\core\lib\requests\PathRequest.js133290122542733509 0
 105F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\core\lib\requests\TargetRequest.js133290122552545731 0
 109F:\Projects\Practice (Portfolio)\Multi Calculator\node_modules\@parcel\core\lib\requests\ValidationRequest.js133290122565003728 0
@@ -6349,7 +6403,11 @@
 86F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.3a01df49.css.map.19148.1o133296915544111724 0
 85F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.3a01df49.css.map.6272.1l133290872567245491 0
 84F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.3a01df49.css.map.852.1f133291721660178227 0
+<<<<<<< HEAD
 72F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.8cfc62b9.js133302158109014468 0
+=======
+72F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.8cfc62b9.js133302198205568640 0
+>>>>>>> Refactor
 81F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.8cfc62b9.js.17704.4s133296846701377168 0
 80F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.8cfc62b9.js.1836.1f133300411494353782 0
 84F:\Projects\Practice (Portfolio)\Multi Calculator\dist\index.8cfc62b9.js.map.9932.14133302093498432422 0
