@@ -60,28 +60,28 @@ export function createDropdown(data, containerId) {
       console.log(currencyScreen.textContent);
       // console.log(flagCurrencies);
 
-      // var myHeaders = new Headers();
-      // myHeaders.append("apikey", "sIRnQJi16KEhm44IoL49deE9815XUcam");
+      var myHeaders = new Headers();
+      myHeaders.append("apikey", "sIRnQJi16KEhm44IoL49deE9815XUcam");
 
-      // var requestOptions = {
-      //   method: "GET",
-      //   redirect: "follow",
-      //   headers: myHeaders,
-      // };
+      var requestOptions = {
+        method: "GET",
+        redirect: "follow",
+        headers: myHeaders,
+      };
 
-      // fetch(
-      //   `https://api.apilayer.com/currency_data/convert?to=${toValue}&from=${fromValue}&amount=${currencyScreen.textContent}`,
-      //   requestOptions
-      // )
-      //   .then((response) => response.text())
-      //   .then((data) => {
-      //     console.log(data);
-      //     const parsedData = JSON.parse(data);
-      //     const resultValue = data.result; // Extract the "result" value from the response
-      //     console.log(resultValue);
-      //     currencyScreen.textContent = resultValue; // Update the screen with the result value
-      //   })
-      //   .catch((error) => console.log("error", error));
+      fetch(
+        `https://api.apilayer.com/currency_data/convert?to=${toValue}&from=${fromValue}&amount=${currencyScreen.textContent}`,
+        requestOptions
+      )
+        .then((response) => response.text())
+        .then((data) => {
+          console.log(data);
+          const parsedData = JSON.parse(data);
+          const resultValue = data.result; // Extract the "result" value from the response
+          console.log(resultValue);
+          currencyScreen.textContent = resultValue; // Update the screen with the result value
+        })
+        .catch((error) => console.log("error", error));
     });
   });
 }
