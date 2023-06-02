@@ -77,7 +77,7 @@ export function createDropdown(data, containerId) {
         .then((data) => {
           console.log(data);
           const parsedData = JSON.parse(data);
-          const resultValue = data.result; // Extract the "result" value from the response
+          const resultValue = parsedData.result; // Extract the "result" value from the response
           console.log(resultValue);
           currencyScreen.textContent = resultValue; // Update the screen with the result value
         })
