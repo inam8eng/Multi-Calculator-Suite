@@ -68,7 +68,7 @@ let answer = "";
 // Function to handle number inputs
 
 function calculate() {
-  textToCalculate = standardScreen.textContent.substring(
+  const textToCalculate = standardScreen.textContent.substring(
     0,
     standardScreen.textContent.length - 1
   );
@@ -316,7 +316,7 @@ function handleOperator(operator) {
       screen.textContent += operator;
     }
 
-    if ((operator = "=")) {
+    if (operator === "=") {
       calculate();
     }
 
