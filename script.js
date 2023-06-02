@@ -316,7 +316,7 @@ function handleOperator(operator) {
       screen.textContent += operator;
     }
 
-    if (operator === "=") {
+    if ((operator = "=")) {
       calculate();
     }
 
