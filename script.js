@@ -33,6 +33,7 @@ const badluckScreen = document.querySelector(".bad-luck-screen");
 // Loop through all the buttons and add a click event listee:\Course\JS\The Complete JavaScript Course 2022 From Zero to Expert!\TutsNodenet The Complete JavaScript Course 2022 From Zero to Expert\01 Welcome, Welcome, Welcome!\complete-javascript-course-master\18-forkify\final\src\js\controller.jsner
 
 //Screen Controller
+let numbers = [];
 
 //Main Button Controllers
 mainButtons.forEach((button) => {
@@ -216,7 +217,6 @@ function calculateLuckScore(numbers) {
 }
 
 //Handle Numbers
-let numbers = [];
 
 export function handleNumber(number) {
   console.log(`Number clicked: ${number}`);
@@ -257,10 +257,12 @@ export function handleNumber(number) {
       currencyScreen.textContent += number;
     }
   }
-  console.log(luckScreen.classList.contains("hidden"));
+
+  console.log(luckScreen.textContent);
   if (!luckScreen.classList.contains("hidden")) {
     let childElements = document.querySelectorAll(".screen-numbers>div");
     const i = numbers.length;
+    console.log(i);
     if (number && numbers.length < 5) {
       numbers.push(number);
 
@@ -297,6 +299,8 @@ function createAudioElementWithSource(source, type) {
 
   return audioElement;
 }
+
+let luckScore = "";
 
 function handleOperator(operator) {
   console.log(`Operator clicked: ${operator}`);
@@ -351,9 +355,10 @@ function handleOperator(operator) {
   }
 
   if (!luckCalculator.classList.contains("hidden")) {
-    console.log(screen.textContent);
-    if ((operator = "Try it Now")) {
-      const luckScore = calculateLuckScore(numbers);
+    if (operator === "Try it Now" && numbers.length > 3 && luckScore === "") {
+      console.log(luckScore);
+      luckScore = calculateLuckScore(numbers);
+      console.log(luckScore);
 
       luckScreen.textContent = luckScore.resutlFunction;
 
