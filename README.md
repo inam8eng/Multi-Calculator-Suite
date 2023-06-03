@@ -1,4 +1,5 @@
 Title: Calculator Web App - Multiple Calculators
+(FOR NOW THIS WEB APP IS NOT FULLY RESPONISVE ACROSS ALL SMALL MOBILE DEVICES OR WATCHES)
 
 Description:
 
