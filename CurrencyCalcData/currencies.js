@@ -1,5 +1,3 @@
-import { handleNumber } from "./script";
-
 const getResult = document.getElementById("calculate");
 const currencyScreen = document.querySelector(".currency-calculator__screen");
 

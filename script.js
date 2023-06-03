@@ -1,14 +1,11 @@
 // Select all the buttons and the screen
-import { createDropdown } from "./currencies.js";
-import { goodLuck, averageLuck, badLuck } from "./texts.js";
+import { createDropdown } from "./CurrencyCalcData/currencies.js";
+import { goodLuck, averageLuck, badLuck } from "./LuckCalcData/texts.js";
 import { switchCalculator } from "./switchCalculators.js";
-import { stringify } from "querystring";
 const mainButtons = document.querySelectorAll("button[data-calculator-type]");
-const calculators = document.querySelectorAll(".calculator");
 const standardCalculator = document.querySelector(".standardCalculator");
 const standardScreen = document.querySelector(".standard-calculator__screen");
 const ageCalculator = document.querySelector(".ageCalculator");
-const currencyCalculator = document.querySelector(".currencyCalculator");
 const luckCalculator = document.querySelector(".luckCalculator");
 const fs = require("fs");
 const buttons = document.querySelectorAll(".calculator__button");
@@ -17,33 +14,44 @@ const screen = document.querySelector(".calculator__screen");
 const screenAge = document.querySelector(".age-calculator__screen");
 const historyButton = document.querySelector(".history__button");
 const historyScreen = document.querySelector(".history__screen");
-
 const currencyScreen = document.querySelector(".currency-calculator__screen");
-const screenNumber = document.querySelector(".screen-numbers>div");
-
 const luckScreen = document.querySelector(".luck-calculator__screen");
 const luckScreenElements = document.querySelectorAll(".luck-screen");
 const goodluckScreen = document.querySelector(".good-luck-screen");
-const luckButton = document.querySelector(".luckCheck");
 const averluckScreen = document.querySelector(".average-luck-screen");
 const badluckScreen = document.querySelector(".bad-luck-screen");
-
-// Loop through all the buttons and add a click event listee:\Course\JS\The Complete JavaScript Course 2022 From Zero to Expert!\TutsNodenet The Complete JavaScript Course 2022 From Zero to Expert\01 Welcome, Welcome, Welcome!\complete-javascript-course-master\18-forkify\final\src\js\controller.jsner
-
-//Screen Controller
-let numbers = [];
+const hintIcon = document.getElementById("hint-icon");
+const hintTooltip = document.querySelector(".hint-tooltip");
+const messageBox = document.getElementById("message-box");
 
 //Main Button Controllers
 mainButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const type = button.dataset.calculatorType;
-    console.log(type);
-    console.log(screen.textContent);
     currencyScreen.textContent = "0";
 
     switchCalculator(type);
   });
 });
+
+//Hints
+
+hintIcon.addEventListener("click", () => {
+  hintTooltip.style.opacity = 0;
+
+  showMessage(
+    "Don't Worry! Your screen may flicker sometimes. and it's on purpose to have a realistic calculator screen effect! Also in Luck Calculator, Your luck depends on how much smart you are to keep numbers difference maximum"
+  );
+});
+
+function showMessage(message) {
+  messageBox.innerHTML = message;
+  messageBox.classList.add("show");
+
+  setTimeout(() => {
+    messageBox.classList.remove("show");
+  }, 6000);
+}
 
 //Standard Calculator
 buttons.forEach((button) => {
@@ -70,16 +78,11 @@ function calculate() {
     0,
     standardScreen.textContent.length - 1
   );
-
   answer = eval(textToCalculate); //eval is a built-in function that evaluates a string and returns the result as a number or a string
-
   calculations.push(`${standardScreen.textContent}  ${answer}`);
   standardScreen.textContent = answer;
-
-  // console.log(calculations);
   localStorage.setItem("calculations", JSON.stringify(calculations));
   calculations = JSON.parse(localStorage.getItem("calculations")) || [];
-
   historyButton.classList.remove("off");
 }
 
@@ -93,24 +96,11 @@ function handleHistory() {
     historyScreen.classList.remove("hidden");
     historyScreen.textContent = calculations[calculations.length - 1];
   } else {
-    // Hide history
     historyScreen.classList.add("hidden");
   }
-
-  //Hide history
 }
 
-// //Age Calculator
-// ageCalculatorButton.addEventListener("click", function () {
-//   console.log("Hello Age Calculator");
-
-//   // Example usage
-//   // const birthdate = "1990-05-19";
-//   // const age = calculateAge(birthdate);
-//   // console.log(age); // Output: The calculated age based on the given birthdate
-
-//   standardCalculator.classList.toggle("hidden");
-// });
+//Age Calculator
 
 function calculateAge(birthYear) {
   const currentDate = new Date().getFullYear();
@@ -121,29 +111,15 @@ function calculateAge(birthYear) {
 
 //Currency Calculator
 
-// fetch("countries.json")
-//   .then((response) => {
-//     response.json();
-//   })
-//   .then((data) => {
-//     createDropdown(data, "countryDropdown");
-//   })
-//   .catch((error) => {
-//     console.error("Error:", error);
-//   });
-
 flags.forEach((flag) => {
   flag.addEventListener("click", function () {
     //Get ID of flag
     const id = flag.id;
     try {
-      const data = fs.readFileSync("countries.json", "utf8");
+      const data = fs.readFileSync("./currencyCalcData/countries.json", "utf8");
       const jsonData = JSON.parse(data);
 
       createDropdown(jsonData, `${id}`);
-
-      console.log(createDropdown(jsonData), `${id}`);
-      console.log(id);
     } catch (error) {
       // Handle any errors
     }
@@ -151,16 +127,16 @@ flags.forEach((flag) => {
 });
 
 //Luck Calculator
+let numbers = [];
 
 function resetEverything() {
   luckScreenElements.forEach((element) => {
     element.classList.add("hidden");
     element.classList.add("inactive-grid-screen");
-    console.log(element);
   });
-  console.log("reset clicked");
 
   numbers = [];
+  luckScore = "";
 
   const childDivs = document.createElement("div");
   childDivs.classList.add("screen-numbers");
@@ -171,7 +147,6 @@ function resetEverything() {
   <div class = "calculator__screen">Number 4</div>`;
   luckScreen.innerHTML = childDivs.outerHTML;
   childElements = childDivs.querySelectorAll("div");
-  console.log(childElements);
 }
 
 function calculateLuckScore(numbers) {
@@ -191,31 +166,23 @@ function calculateLuckScore(numbers) {
 
     return { resutlFunction: goodLuck(), resultText: "Lucky" };
   } else if (diff1 <= 5 && diff2 <= 5 && diff3 <= 5) {
-    console.log(diff1, diff2, diff3);
     badluckScreen.classList.add("active-grid-screen");
     badluckScreen.classList.remove("inactive-grid-screen");
 
     return { resutlFunction: badLuck(), resultText: "Unlucky" };
   } else {
-    // return "You are lazy and a time waster.";
     averluckScreen.classList.add("active-grid-screen");
     averluckScreen.classList.remove("inactive-grid-screen");
 
     return { resutlFunction: averageLuck(), resultText: "Average" };
   }
-
-  // const randomText = generateRandomText();
-  // console.log("Random Text:", randomText);
 }
 
-//Handle Numbers
+//Handle Numbers Function
 
 export function handleNumber(number) {
-  console.log(`Number clicked: ${number}`);
-
   //If Standard Calculator is Active
   if (!standardCalculator.classList.contains("hidden")) {
-    // console.log(!/[+\-*/]/.test(screen.textContent));
     if (
       (!/[+\-*/]/.test(standardScreen.textContent) && answer !== "") ||
       standardScreen.textContent === "0"
@@ -228,6 +195,7 @@ export function handleNumber(number) {
   }
 
   //If Age Calculator is Active
+
   if (!ageCalculator.classList.contains("hidden")) {
     if (/Enter Your Birthyear/.test(screenAge.textContent)) {
       screenAge.textContent = number;
@@ -250,18 +218,15 @@ export function handleNumber(number) {
     }
   }
 
-  console.log(luckScreen.textContent);
   if (!luckScreen.classList.contains("hidden")) {
     let childElements = document.querySelectorAll(".screen-numbers>div");
     const i = numbers.length;
-    console.log(i);
+
     if (number && numbers.length < 5) {
       numbers.push(number);
 
       childElements[i].textContent = number;
     }
-
-    // luckScreen.textContent += number;
   }
 }
 
@@ -269,10 +234,8 @@ export function handleNumber(number) {
 historyButton.addEventListener("click", () => {
   handleHistory();
 });
-// function createAudioElement(audioName) {
-//   let audio = new Audio(audioName);
-//   return audio.play();
-// }
+
+//Creating Audio Sounds
 
 function createAudioElementWithSource(source, type) {
   const audioElement = document.createElement("audio");
@@ -287,16 +250,12 @@ function createAudioElementWithSource(source, type) {
   // Append the audio element to the document body
   document.body.appendChild(audioElement);
 
-  console.log(audioElement);
-
   return audioElement;
 }
 
 let luckScore = "";
 
 function handleOperator(operator) {
-  console.log(`Operator clicked: ${operator}`);
-
   // console.log(typeof operator);
 
   //If Standard Calculator is Active
@@ -322,12 +281,12 @@ function handleOperator(operator) {
 
   function adjustFontSize() {
     const textLength = luckScreen.textContent.length;
-    const screenWidth = 480; // Desired screen width in pixels
+    const screenWidth = 480;
 
-    const maxFontSize = 1.8; // Maximum font size in rem
-    const minFontSize = 1.1; // Minimum font size in rem
+    const maxFontSize = 1.8;
+    const minFontSize = 1.1;
 
-    const scaleFactor = (maxFontSize - minFontSize) / 20; // Adjust scale factor as needed
+    const scaleFactor = (maxFontSize - minFontSize) / 20;
 
     let fontSize = maxFontSize - scaleFactor * (textLength - 1);
     fontSize = Math.max(fontSize, minFontSize);
@@ -348,9 +307,7 @@ function handleOperator(operator) {
 
   if (!luckCalculator.classList.contains("hidden")) {
     if (operator === "Try it Now" && numbers.length > 3 && luckScore === "") {
-      console.log(luckScore);
       luckScore = calculateLuckScore(numbers);
-      console.log(luckScore);
 
       luckScreen.textContent = luckScore.resutlFunction;
 
@@ -373,9 +330,6 @@ function handleOperator(operator) {
         );
       }
       adjustFontSize();
-
-      // standardCalculator.classList.add("hidden");
-      // ageCalculator.classList.add("hidden");
     }
     if (operator === "Reset") {
       resetEverything();
@@ -384,12 +338,8 @@ function handleOperator(operator) {
 }
 
 $(document).ready(function () {
-  // Button Click Event Handling
   $(".data-button").click(function () {
-    // Remove active class from other buttons
     $(".data-button").not(this).removeClass("active");
-
-    // Toggle active class for the clicked button
     $(this).toggleClass("active");
   });
 });
