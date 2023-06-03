@@ -150,12 +150,6 @@ flags.forEach((flag) => {
   });
 });
 
-// currencyCalculatorButton.addEventListener("click", function () {
-//   console.log("Hello Currency Calculator");
-
-//   standardCalculator.classList.toggle("hidden");
-// });
-
 //Luck Calculator
 
 function resetEverything() {
