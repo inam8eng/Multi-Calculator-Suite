@@ -2,8 +2,6 @@
 import { createDropdown } from "./currencies.js";
 import { goodLuck, averageLuck, badLuck } from "./texts.js";
 import { switchCalculator } from "./switchCalculators.js";
-import { create } from "domain";
-import { promises } from "dns";
 import { stringify } from "querystring";
 const mainButtons = document.querySelectorAll("button[data-calculator-type]");
 const calculators = document.querySelectorAll(".calculator");
@@ -363,7 +361,10 @@ function handleOperator(operator) {
       luckScreen.textContent = luckScore.resutlFunction;
 
       if (luckScore.resultText === "Average") {
-        createAudioElementWithSource("./audio/Average.mp3", "audio/mpeg");
+        const audio = createAudioElementWithSource(
+          "./audio/Average.mp3",
+          "audio/mpeg"
+        );
       }
       if (luckScore.resultText === "Lucky") {
         const audio = createAudioElementWithSource(

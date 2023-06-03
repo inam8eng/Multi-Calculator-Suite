@@ -1,4 +1,3 @@
-import { createAudioElement } from "./audio";
 const randomIndex = "";
 export function goodLuck() {
   const text = [
