@@ -1,6 +1,5 @@
 Title: Calculator Web App - Multiple Calculators
 
-(FOR NOW THIS WEB APP IS NOT FULLY RESPONISVE ACROSS ALL SMALL MOBILE DEVICES OR WATCHES)
 
 Description:
 
@@ -22,6 +21,8 @@ Currency Calculator: Convert between different currencies using up-to-date excha
 Whether you need a simple calculator for daily calculations, want to explore your luck score, determine your age accurately, or perform currency conversions, the Calculator Web App has got you covered. Try it out and simplify your calculations today!
 
 Please note: This project is an educational endeavor and meant for learning purposes. It showcases the implementation of different calculator functionalities and serves as an example of web application development.
+
+(For Now This Web app is not fully responsive across all small mobile devices or watches.
 
 Feel free to explore the source code and contribute to the project. Any suggestions, bug reports, or feature requests are highly appreciated. Let's make calculations easier and more enjoyable together!
 
